@@ -8,7 +8,7 @@ docstrings em inglês; unidades SI explícitas (kWh/m²/dia, MJ/m²/dia, W/m², 
 
 ```powershell
 cd analise-recurso-solar
-.\.venv\Scripts\python -m pip install -r requirements.txt   # só na primeira vez
+.\.venv\Scripts\python -m pip install -r requirements-dev.txt   # só na primeira vez
 .\.venv\Scripts\python -m streamlit run src/solarapp/app.py
 ```
 
@@ -36,6 +36,13 @@ Testes e lint:
   Hay-Davies; inclinação ótima anual e mensal; carta solar; FV e coletor (indicadores).
 - **Abas:** Resumo, Dados mensais, Série diária, Plano inclinado, Trajetória solar, Dados brutos.
 - **Exportação:** CSV, Excel e relatório HTML (imprima como PDF pelo navegador).
+
+## Publicar na web e usar no celular (Streamlit Community Cloud)
+
+1. Em https://share.streamlit.io entre com o GitHub e clique em **Create app**.
+2. Repositório `analise-recurso-solar`, branch `main`, arquivo principal `src/solarapp/app.py`.
+3. Em *Advanced settings* escolha Python 3.12 ou 3.13 e publique (`requirements.txt` é lido sozinho).
+4. No Android (Chrome): abra o link → menu ⋮ → **Adicionar à tela inicial** / **Instalar app**.
 
 ## Estrutura
 

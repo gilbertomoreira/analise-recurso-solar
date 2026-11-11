@@ -5,6 +5,7 @@ function names and docstrings in English; SI units always explicit.
 
 ## Commands (use the project venv)
 - Run app: `.\.venv\Scripts\python -m streamlit run src/solarapp/app.py`
+- Deps: `requirements.txt` (runtime, used by Streamlit Cloud) and `requirements-dev.txt` (+pytest, responses, ruff)
 - Tests: `.\.venv\Scripts\python -m pytest -q` · Lint: `.\.venv\Scripts\ruff check src tests`
 - Run from the `SolarApp/` directory; `pyproject.toml` sets `pythonpath = ["src"]` for pytest.
 
